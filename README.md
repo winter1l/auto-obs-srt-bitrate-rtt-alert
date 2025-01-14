@@ -2,7 +2,7 @@
 auto-obs-srt-bitrate-rtt-alert includes both Korean and English versions  
 auto-obs-srt-bitrate-rtt-alert는 한국어, 영어 버전을 지원합니다.
 
-[English](https://github.com/winter1l/auto-obs-srt-bitrate-rtt-alert/main/README.md#%ED%95%9C%EA%B8%80) | [한국어](https://github.com/winter1l/auto-obs-srt-bitrate-rtt-alert/main/README.md#%ED%95%9C%EA%B8%80)
+[English](https://github.com/winter1l/auto-obs-srt-bitrate-rtt-alert/tree/main?tab=readme-ov-file#english) | [한국어](https://github.com/winter1l/auto-obs-srt-bitrate-rtt-alert?tab=readme-ov-file#%ED%95%9C%EA%B5%AD%EC%96%B4)
 
 # English
 This program is a Python-based script that currently supports only the SRT(LA) server.
