@@ -68,8 +68,7 @@ SRT(LA) stats URL에서 비트레이트와 RTT 값을 가져오며 abc_config.js
 
 즐기세요!
 
-# License
-This project is licensed under the MIT License. It also includes the following dependencies:
-- [`obs-websocket-py`](https://github.com/Elektordi/obs-websocket-py) (MIT License)
-- [`requests`](https://github.com/psf/requests) (Apache License 2.0)
+# Libraries and Licenses
+- [`obs-websocket-py`](https://github.com/Elektordi/obs-websocket-py) - MIT License
+- [`requests`](https://github.com/psf/requests) - Apache License 2.0
 
