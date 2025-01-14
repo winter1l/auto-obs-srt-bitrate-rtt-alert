@@ -28,7 +28,7 @@ Sample code. Do not use this as is.
     "SOURCE_DISPLAY_TIME": 30                    // Duration to display the source (seconds) | Must be longer than 1 second
 }
 ```
-3. Run auto-obs-srt-bitrate-rtt-alert_en.exe
+3. Run `auto-obs-srt-bitrate-rtt-alert_en.exe`
 
 Enjoy!
 
@@ -58,6 +58,6 @@ SRT(LA) stats URL에서 비트레이트와 RTT 값을 가져오며 abc_config.js
     "SOURCE_DISPLAY_TIME": 30                    // 소스를 표시할 시간 (초) | 1초보다 길어야됨
 }
 ```
-3. auto-obs-srt-bitrate-rtt-alert_kr.exe를 실행합니다.
+3. `auto-obs-srt-bitrate-rtt-alert_kr.exe`를 실행합니다.
 
 즐기세요!
