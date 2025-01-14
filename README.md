@@ -9,7 +9,7 @@ This program is a Python-based script that currently supports only the SRT(LA) s
 
 The script fetches bitrate and RTT values from the SRT(LA) stats URL. If these values drop below the thresholds specified in abc_config.json, it displays a source in OBS via the OBS WebSocket and then hides it after the specified duration. The script checks bitrate and RTT every 2 seconds, ignoring the first 15 seconds of unstable values to ensure accurate measurement once connected.
 
-How to Use
+## How to Use
 1. Download `auto-obs-srt-bitrate-rtt-alert_en.zip` from the [download link.](https://github.com/winter1l/auto-obs-srt-bitrate-rtt-alert/releases)
 2. Extract the .zip file and open `abc_config.json` to modify it as needed.
 ```
