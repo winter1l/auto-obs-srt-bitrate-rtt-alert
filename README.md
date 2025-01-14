@@ -30,6 +30,9 @@ Sample code. Do not use this as is.
 ```
 3. Run `auto-obs-srt-bitrate-rtt-alert_en.exe`
 
+> [!IMPORTANT]
+> `auto-obs-srt-bitrate-rtt-alert_en.exe` and `abc_config.json` must be located in the same folder.
+> 
 Enjoy!
 
 
@@ -60,10 +63,13 @@ SRT(LA) stats URL에서 비트레이트와 RTT 값을 가져오며 abc_config.js
 ```
 3. `auto-obs-srt-bitrate-rtt-alert_kr.exe`를 실행합니다.
 
+> [!IMPORTANT]
+> `auto-obs-srt-bitrate-rtt-alert_kr.exe`와 `abc_config.json`은 같은 폴더에 위치해야 합니다.
+
 즐기세요!
 
 # License
 This project is licensed under the MIT License. It also includes the following dependencies:
-- `obs-websocket-py` (MIT License)
-- `requests` (Apache License 2.0)
+- [`obs-websocket-py`](https://github.com/Elektordi/obs-websocket-py) (MIT License)
+- [`requests`](https://github.com/psf/requests) (Apache License 2.0)
 
