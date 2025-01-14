@@ -12,7 +12,7 @@ The script fetches bitrate and RTT values from the SRT(LA) stats URL. If these v
 Made using GPT 4o, claude 3.5 sonnet.
 
 ## How to Use
-1. Download `auto-obs-srt-bitrate-rtt-alert_en.zip` from the [download link.](https://github.com/winter1l/auto-obs-srt-bitrate-rtt-alert/releases)
+1. Download `auto-obs-srt-bitrate-rtt-alert_en.zip` from the [Releases.](https://github.com/winter1l/auto-obs-srt-bitrate-rtt-alert/releases)
 2. Extract the .zip file and open `abc_config.json` to modify it as needed.
 ```
 Sample code. Do not use this as is.
@@ -47,7 +47,7 @@ SRT(LA) stats URL에서 비트레이트와 RTT 값을 가져오며 abc_config.js
 GPT 4o, claude 3.5 sonnet를 이용해 만들었습니다.
 
 ## 사용방법
-1. [다운로드 링크](https://github.com/winter1l/auto-obs-srt-bitrate-rtt-alert/releases)에서 `auto-obs-srt-bitrate-rtt-alert_kr.zip`를 받습니다.
+1. [Releases](https://github.com/winter1l/auto-obs-srt-bitrate-rtt-alert/releases)에서 `auto-obs-srt-bitrate-rtt-alert_kr.zip`를 받습니다.
 2. .zip을 압축 해제하고 `abc_config.json`을 열어 수정합니다.
 ```
 보기용 코드입니다. 이 코드를 사용하지마세요.
