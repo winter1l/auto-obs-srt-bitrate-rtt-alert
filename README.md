@@ -9,6 +9,8 @@ This program is a Python-based script that currently supports only the SRT(LA) s
 
 The script fetches bitrate and RTT values from the SRT(LA) stats URL. If these values drop below the thresholds specified in abc_config.json, it displays a source in OBS via the OBS WebSocket and then hides it after the specified duration. The script checks bitrate and RTT every 2 seconds, ignoring the first 15 seconds of unstable values to ensure accurate measurement once connected.
 
+Made using GPT 4o, claude 3.5 sonnet.
+
 ## How to Use
 1. Download `auto-obs-srt-bitrate-rtt-alert_en.zip` from the [download link.](https://github.com/winter1l/auto-obs-srt-bitrate-rtt-alert/releases)
 2. Extract the .zip file and open `abc_config.json` to modify it as needed.
@@ -42,6 +44,8 @@ Enjoy!
 SRT(LA) stats URL에서 비트레이트와 RTT 값을 가져오며 abc_config.json에 설정된 기준 이하로 떨어지면 OBS Websocket을 통해 OBS 소스를 표시한 후 설정한 시간 뒤에 사라지는 스트립트입니다.
 2초 마다 비트레이트와 RTT를 감지하며, 연결되었을때 안정적인 측정을 위해 값이 불안정한 처음 15초는 무시하게 됩니다.
 
+GPT 4o, claude 3.5 sonnet를 이용해 만들었습니다.
+
 ## 사용방법
 1. [다운로드 링크](https://github.com/winter1l/auto-obs-srt-bitrate-rtt-alert/releases)에서 `auto-obs-srt-bitrate-rtt-alert_kr.zip`를 받습니다.
 2. .zip을 압축 해제하고 `abc_config.json`을 열어 수정합니다.
@@ -69,6 +73,6 @@ SRT(LA) stats URL에서 비트레이트와 RTT 값을 가져오며 abc_config.js
 즐기세요!
 
 # Libraries and Licenses
-- [`obs-websocket-py`](https://github.com/Elektordi/obs-websocket-py)
-- [`requests`](https://github.com/psf/requests)
+- [obs-websocket-py](https://github.com/Elektordi/obs-websocket-py)
+- [requests](https://github.com/psf/requests)
 
