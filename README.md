@@ -1,1 +1,1 @@
-# auto-obs-srt-bitrate-alert
+# auto-obs-srt-bitrate-rtt-alert
