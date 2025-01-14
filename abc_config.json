@@ -1,0 +1,13 @@
+{
+    "STATS_URL": "http://127.0.0.1:8181/stats",
+    "PUBLISHER": "live/stream/belabox",
+    "OBS_HOST": "localhost",
+    "OBS_PORT": 4455,
+    "OBS_PASSWORD": "password",
+    "SOURCE_NAME": "Low bitrate",
+    "SCENE_NAME": "Live",
+    "BITRATE_THRESHOLD": 2000,
+    "RTT_THRESHOLD": 700,
+    "COOLDOWN_SECONDS": 600,
+    "SOURCE_DISPLAY_TIME": 30
+}
