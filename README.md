@@ -5,7 +5,32 @@ auto-obs-srt-bitrate-rtt-alert는 한국어, 영어 버전을 지원합니다.
 [English](https://github.com/winter1l/auto-obs-srt-bitrate-rtt-alert/main/README.md#%ED%95%9C%EA%B8%80) | [한국어](https://github.com/winter1l/auto-obs-srt-bitrate-rtt-alert/main/README.md#%ED%95%9C%EA%B8%80)
 
 # English
+This program is a Python-based script that currently supports only the SRT(LA) server.
 
+The script fetches bitrate and RTT values from the SRT(LA) stats URL. If these values drop below the thresholds specified in abc_config.json, it displays a source in OBS via the OBS WebSocket and then hides it after the specified duration. The script checks bitrate and RTT every 2 seconds, ignoring the first 15 seconds of unstable values to ensure accurate measurement once connected.
+
+How to Use
+1. Download `auto-obs-srt-bitrate-rtt-alert_en.zip` from the [download link.](https://github.com/winter1l/auto-obs-srt-bitrate-rtt-alert/releases)
+2. Extract the .zip file and open `abc_config.json` to modify it as needed.
+```
+Sample code. Do not use this as is.
+{
+    "STATS_URL": "http://127.0.0.1:8181/stats",  // SRT Server stats URL
+    "PUBLISHER": "live/stream/belabox",          // SRT Stream Key
+    "OBS_HOST": "localhost",                     // OBS WebSocket IP. Modify this if OBS is running on a different computer.
+    "OBS_PORT": 4455,                            // OBS WebSocket port number
+    "OBS_PASSWORD": "abc123",                    // OBS WebSocket password
+    "SOURCE_NAME": "Low bitrate",                // Name of the OBS source to toggle visibility
+    "SCENE_NAME": "Live",                        // Scene name containing the source
+    "BITRATE_THRESHOLD": 2000,                   // Display OBS source if bitrate falls below this value (kbps) | Must be greater than 0
+    "RTT_THRESHOLD": 700,                        // Display OBS source if RTT exceeds this value (ms) | Must be greater than 0
+    "COOLDOWN_SECONDS": 600,                     // Cooldown time after activation (seconds) | Must be longer than SOURCE_DISPLAY_TIME
+    "SOURCE_DISPLAY_TIME": 30                    // Duration to display the source (seconds) | Must be longer than 1 second
+}
+```
+3. Run auto-obs-srt-bitrate-rtt-alert_en.exe
+
+Enjoy!
 
 
 # 한국어
@@ -27,9 +52,12 @@ SRT(LA) stats URL에서 비트레이트와 RTT 값을 가져오며 abc_config.js
     "OBS_PASSWORD": "abc123",                    // OBS Websocket 비밀번호
     "SOURCE_NAME": "Low bitrate",                // 보기 상태를 토글할 OBS 소스 이름
     "SCENE_NAME": "Live",                        // 소스가 있는 장면 이름
-    "BITRATE_THRESHOLD": 2000,                   // 이 비트레이트 미만이면 OBS 소스를 표시 (kbps)
-    "RTT_THRESHOLD": 700,                        // 이 RTT 값 이상이면 OBS 소스를 표시 (ms)
-    "COOLDOWN_SECONDS": 600,                     // 작동 후 쿨타임 (초)
-    "SOURCE_DISPLAY_TIME": 30                    // 소스를 표시할 시간 (초)
+    "BITRATE_THRESHOLD": 2000,                   // 이 비트레이트 미만이면 OBS 소스를 표시 (kbps) | 0보다 커야함
+    "RTT_THRESHOLD": 700,                        // 이 RTT 값 이상이면 OBS 소스를 표시 (ms) | 0보다 커야함
+    "COOLDOWN_SECONDS": 600,                     // 작동 후 쿨타임 (초) | SOURCE_DISPLAY_TIME보다 길어야됨
+    "SOURCE_DISPLAY_TIME": 30                    // 소스를 표시할 시간 (초) | 1초보다 길어야됨
 }
 ```
+3. auto-obs-srt-bitrate-rtt-alert_kr.exe를 실행합니다.
+
+즐기세요!
